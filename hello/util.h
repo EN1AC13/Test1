@@ -29,11 +29,14 @@ typedef struct tk_conf
 
 int read_conf(char* filename,tk_conf_t* conf) {
     FILE* fp = fopen(filename,"r");
-    if(*fp) return TK_CONF_ERROR;
+    if(!fp) return TK_CONF_ERROR;
+    char buff[BUFLEN];
+    int buff_len = BUFLEN;
+    char* curr_pos = buff;
+    char* delim_pos = NULL;
 }
 
 void handle_for_sigpipe() {
-
 }
 
 int socket_bind_listen(int port) {

@@ -1,0 +1,3 @@
+root=./home/spark#
+port=90
+thread_num=10

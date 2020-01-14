@@ -6,6 +6,10 @@
 #define CR '\r'
 #define LF '\n'
 
+#define tk_str3_cmp(m,c0,c1,c2,c3) *(uint32_t *)m==((c3<<24)|(c2<<16)|(c1<<8)|c0)
+#define tk_str30cmp(m,c0,c1,c2,c3) *(uint32_t *)m==((c3<<24)|(c2<<16)|(c1<<8)|c0)
+#define tk_str4cmp(m,c0,c1,c2,c3) *(uint32_t *)m==((c3<<24)|(c2<<16)|(c1<<8)|c0)
+
 // http请求行解析
 int tk_http_parse_request_line(tk_http_request_t *request) {
     enum{

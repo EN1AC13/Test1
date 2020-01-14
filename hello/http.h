@@ -10,10 +10,10 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
-// #include "timer.h"
+#include "timer.h"
 #include "util.h"
-// #include "rio.h"
-// #include "epoll.h"
+#include "rio.h"
+#include "epoll.h"
 #include "http_parse.h"
 #include "http_request.h"
 
